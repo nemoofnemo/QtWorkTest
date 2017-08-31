@@ -1,4 +1,6 @@
 /Win32/*
+Debug/*
+Release/*
 *.sdf
 *.sln
 *.suo
