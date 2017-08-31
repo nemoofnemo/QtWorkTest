@@ -1,0 +1,22 @@
+﻿生成启动时间为 8/31/2017 12:52:56 PM。
+     1>项目“C:\Users\nemo\Documents\Visual Studio 2013\Projects\QtWorkTest\QtWorkTest\QtWorkTest.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I.\GeneratedFiles /I. /IC:\Qt\Qt5.6.2\5.6\msvc2013\include /I.\GeneratedFiles\Debug /IC:\Qt\Qt5.6.2\5.6\msvc2013\include\QtCore /IC:\Qt\Qt5.6.2\5.6\msvc2013\include\QtGui /IC:\Qt\Qt5.6.2\5.6\msvc2013\include\QtWebSockets /IC:\Qt\Qt5.6.2\5.6\msvc2013\include\QtWidgets /Zi /nologo /W1 /WX- /Od /Oy- /D UNICODE /D WIN32 /D WIN64 /D QT_DLL /D QT_CORE_LIB /D QT_GUI_LIB /D QT_WEBSOCKETS_LIB /D QT_WIDGETS_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt CommentDialog.cpp
+         CommentDialog.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\nemo\Documents\Visual Studio 2013\Projects\QtWorkTest\Win32\Debug\\QtWorkTest.exe" /NOLOGO /LIBPATH:C:\Qt\Qt5.6.2\5.6\msvc2013\lib qtmaind.lib Qt5Cored.lib Qt5Guid.lib Qt5WebSocketsd.lib Qt5Widgetsd.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\nemo\Documents\Visual Studio 2013\Projects\QtWorkTest\Win32\Debug\QtWorkTest.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\nemo\Documents\Visual Studio 2013\Projects\QtWorkTest\Win32\Debug\QtWorkTest.lib" /MACHINE:X86 /SAFESEH Debug\CommentDialog.obj
+         Debug\CommentListItem.obj
+         Debug\CommentPurchaseItem.obj
+         Debug\moc_CommentDialog.obj
+         Debug\moc_CommentListItem.obj
+         Debug\moc_CommentPurchaseItem.obj
+         Debug\moc_QtWorkTest.obj
+         Debug\qrc_QtWorkTest.obj
+         Debug\main.obj
+         Debug\QtWorkTest.obj
+         QtWorkTest.vcxproj -> C:\Users\nemo\Documents\Visual Studio 2013\Projects\QtWorkTest\Win32\Debug\QtWorkTest.exe
+     1>已完成生成项目“C:\Users\nemo\Documents\Visual Studio 2013\Projects\QtWorkTest\QtWorkTest\QtWorkTest.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.92

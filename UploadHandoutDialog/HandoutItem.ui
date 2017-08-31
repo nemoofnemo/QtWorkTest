@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HandoutItem</class>
+ <widget class="QWidget" name="HandoutItem">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>370</width>
+    <height>45</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>HandoutItem</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {	
+	background-color: rgb(255, 255, 255);
+}
+
+QPushButton#iconButton {
+	background-color: transparent;
+}
+
+QLabel#filenameLabel {
+	background-color: transparent;
+	font-size: 12px;
+	color: #4A4A4A;
+	font-family:&quot;Microsoft YaHei&quot;; 
+}
+
+QPushButton#removeButton {
+	background-color: transparent;
+	font-family:&quot;Microsoft YaHei&quot;;
+	font-size: 12px;
+	color: rgb(74,149,241);
+}
+
+QPushButton#removeButton:hover {
+	background-color: transparent;
+	font-family:&quot;Microsoft YaHei&quot;;
+	font-size: 12px;
+	color: #81BBFF;
+}
+
+QPushButton#removeButton:pressed {
+	background-color: transparent;
+	font-family:&quot;Microsoft YaHei&quot;;
+	font-size: 12px;
+	color: #3371BA;
+}
+
+</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QPushButton" name="iconButton">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>22</width>
+       <height>22</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>22</width>
+       <height>22</height>
+      </size>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QLabel" name="filenameLabel">
+     <property name="minimumSize">
+      <size>
+       <width>260</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>260</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>filename</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>220</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="0" column="3">
+    <widget class="QPushButton" name="removeButton">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>40</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>移除</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

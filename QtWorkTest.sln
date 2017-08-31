@@ -1,0 +1,73 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QtWorkTest", "QtWorkTest\QtWorkTest.vcxproj", "{B12702AD-ABFB-343A-A199-8E24837244A3}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test1", "test1\test1.vcxproj", "{BA7E5E2F-1BB2-4572-AB9A-8717AA481792}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OpenGLTest", "OpenGLTest\OpenGLTest.vcxproj", "{319ADE2B-8F64-43E3-AD49-AF74C02A1AAD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QPainterTest", "QPainterTest\QPainterTest.vcxproj", "{05140B10-A195-4015-9524-FDD80FD86567}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QtGuiApplication1", "QtGuiApplication1\QtGuiApplication1.vcxproj", "{0E37332A-1C87-4A1D-A3A1-580CD97E8390}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DARRAYTEST", "DARRAYTEST\DARRAYTEST.vcxproj", "{F796105A-1953-4EC4-B957-C9B4536EF051}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "widget", "widget\widget.vcxproj", "{8AB864EA-5940-47B7-B4B1-33258EDC5C07}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.vcxproj", "{2CAB573D-1B82-4CB5-A748-0CA39AD31ED8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UploadHandoutDialog", "UploadHandoutDialog\UploadHandoutDialog.vcxproj", "{618D8EEF-B96B-47EC-9EC3-3ACFF8A05198}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B12702AD-ABFB-343A-A199-8E24837244A3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B12702AD-ABFB-343A-A199-8E24837244A3}.Debug|Win32.Build.0 = Debug|Win32
+		{B12702AD-ABFB-343A-A199-8E24837244A3}.Release|Win32.ActiveCfg = Release|Win32
+		{B12702AD-ABFB-343A-A199-8E24837244A3}.Release|Win32.Build.0 = Release|Win32
+		{BA7E5E2F-1BB2-4572-AB9A-8717AA481792}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BA7E5E2F-1BB2-4572-AB9A-8717AA481792}.Debug|Win32.Build.0 = Debug|Win32
+		{BA7E5E2F-1BB2-4572-AB9A-8717AA481792}.Release|Win32.ActiveCfg = Release|Win32
+		{BA7E5E2F-1BB2-4572-AB9A-8717AA481792}.Release|Win32.Build.0 = Release|Win32
+		{319ADE2B-8F64-43E3-AD49-AF74C02A1AAD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{319ADE2B-8F64-43E3-AD49-AF74C02A1AAD}.Debug|Win32.Build.0 = Debug|Win32
+		{319ADE2B-8F64-43E3-AD49-AF74C02A1AAD}.Release|Win32.ActiveCfg = Release|Win32
+		{319ADE2B-8F64-43E3-AD49-AF74C02A1AAD}.Release|Win32.Build.0 = Release|Win32
+		{05140B10-A195-4015-9524-FDD80FD86567}.Debug|Win32.ActiveCfg = Debug|Win32
+		{05140B10-A195-4015-9524-FDD80FD86567}.Debug|Win32.Build.0 = Debug|Win32
+		{05140B10-A195-4015-9524-FDD80FD86567}.Release|Win32.ActiveCfg = Release|Win32
+		{05140B10-A195-4015-9524-FDD80FD86567}.Release|Win32.Build.0 = Release|Win32
+		{0E37332A-1C87-4A1D-A3A1-580CD97E8390}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0E37332A-1C87-4A1D-A3A1-580CD97E8390}.Debug|Win32.Build.0 = Debug|Win32
+		{0E37332A-1C87-4A1D-A3A1-580CD97E8390}.Release|Win32.ActiveCfg = Release|Win32
+		{0E37332A-1C87-4A1D-A3A1-580CD97E8390}.Release|Win32.Build.0 = Release|Win32
+		{F796105A-1953-4EC4-B957-C9B4536EF051}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F796105A-1953-4EC4-B957-C9B4536EF051}.Debug|Win32.Build.0 = Debug|Win32
+		{F796105A-1953-4EC4-B957-C9B4536EF051}.Release|Win32.ActiveCfg = Release|Win32
+		{F796105A-1953-4EC4-B957-C9B4536EF051}.Release|Win32.Build.0 = Release|Win32
+		{8AB864EA-5940-47B7-B4B1-33258EDC5C07}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8AB864EA-5940-47B7-B4B1-33258EDC5C07}.Debug|Win32.Build.0 = Debug|Win32
+		{8AB864EA-5940-47B7-B4B1-33258EDC5C07}.Release|Win32.ActiveCfg = Release|Win32
+		{8AB864EA-5940-47B7-B4B1-33258EDC5C07}.Release|Win32.Build.0 = Release|Win32
+		{2CAB573D-1B82-4CB5-A748-0CA39AD31ED8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2CAB573D-1B82-4CB5-A748-0CA39AD31ED8}.Debug|Win32.Build.0 = Debug|Win32
+		{2CAB573D-1B82-4CB5-A748-0CA39AD31ED8}.Release|Win32.ActiveCfg = Release|Win32
+		{2CAB573D-1B82-4CB5-A748-0CA39AD31ED8}.Release|Win32.Build.0 = Release|Win32
+		{618D8EEF-B96B-47EC-9EC3-3ACFF8A05198}.Debug|Win32.ActiveCfg = Debug|Win32
+		{618D8EEF-B96B-47EC-9EC3-3ACFF8A05198}.Debug|Win32.Build.0 = Debug|Win32
+		{618D8EEF-B96B-47EC-9EC3-3ACFF8A05198}.Release|Win32.ActiveCfg = Release|Win32
+		{618D8EEF-B96B-47EC-9EC3-3ACFF8A05198}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		Qt5Version = $(DefaultQtVersion)
+	EndGlobalSection
+EndGlobal

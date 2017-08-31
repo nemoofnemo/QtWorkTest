@@ -1,0 +1,918 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UploadHandoutDialogClass</class>
+ <widget class="QWidget" name="UploadHandoutDialogClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>450</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>UploadHandoutDialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{	
+	background-color: rgb(255, 255, 255);
+}
+
+QPushButton#iconButton {
+	background-color: transparent;  
+}
+
+QWidget#tittleWidget{	
+	background-color: #FA5D5C;
+}
+
+QLabel#tittleLabel {
+	padding-left: 4px;
+	margin-bottom: 2px;
+	color: #ffffff;
+	font-size: 14px;
+	font-family:&quot;Microsoft YaHei&quot;; 
+	background: #FA5D5C;
+}
+
+QPushButton#iconButton {  
+	background-image: url(:/UploadHandoutDialog/Resources/upd_icon.png);
+	background-repeat: no-repeat;
+    background-color: transparent;  
+	background-position: center;
+}
+
+QPushButton#minButton {    
+	background-image: url(:/UploadHandoutDialog/Resources/upd_min_normal.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position:center;
+}
+
+QPushButton#minButton:hover {   
+	background-image: url(:/UploadHandoutDialog/Resources/upd_mini_hover.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position:center;
+}
+
+QPushButton#closeButton {    
+	background-image: url(:/UploadHandoutDialog/Resources/upd_close_normal.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position:center;
+}
+
+QPushButton#closeButton:hover {   
+	background-image: url(:/UploadHandoutDialog/Resources/upd_close_hover.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position:center;
+}
+
+QLabel#listLabel {
+	border: 1px solid #EAEAEA;
+	padding-left: 5px;
+	padding-bottom: 2px;
+	font-size: 14px;
+	color: #4A4A4A;
+	font-family:&quot;Microsoft YaHei&quot;; 
+}
+
+QListWidget#listWidget {
+	border-style: none solid solid solid;
+	border-width:1px;
+	border-color: #EAEAEA;
+	outline:0px;
+}
+QListView#listWidget::item:selected {
+	border-width: 0px ;
+	background: #e6d6d6;
+}
+QListView#listWidget::item:selected:!active {
+	border-width: 0px ;
+}
+QListView#listWidget::item:selected:active {
+	border-width: 0px ;
+}
+QListView#listWidget::item:hover{
+	border-width: 0px ;
+	background: #f4ecec;
+}
+
+QScrollBar{
+    width:8px;
+    border-radius:2px;
+}
+QScrollBar::handle{
+	background:lightgray; 
+	border-radius:2px;
+}
+QScrollBar::handle:hover{
+	background:gray;
+	border-radius:2px;
+}
+QScrollBar::handle:pressed{
+    background:rgb(83,82,82);
+	border-radius:2px;
+}
+
+QWidget#previewWidget {
+	border: 1px solid #EAEAEA;
+	background-color: #EAEAEA;
+}
+
+QLabel#previewLabel {
+	background-color: transparent;
+}
+
+QPushButton#prevButton{
+	background-color: transparent;
+}
+
+QPushButton#nextButton{
+	background-color: transparent;
+}
+
+QPushButton#presentationButton1{
+	background-image: url(:/UploadHandoutDialog/Resources/upd_presentation_disable.png);
+    background-color: transparent;
+	background-repeat: no-repeat;
+    background-position:center;
+}
+
+QPushButton#presentationButton2{
+	background-image: url(:/UploadHandoutDialog/Resources/upd_presentation_normal.png);
+    background-color: transparent;
+	background-repeat: no-repeat;
+    background-position:center;
+}
+
+QPushButton#presentationButton2:hover{
+	background-image: url(:/UploadHandoutDialog/Resources/upd_presentation_hover.png);
+    background-color: transparent;
+	background-repeat: no-repeat;
+    background-position:center;
+}
+
+QPushButton#presentationButton2:pressed{
+	background-image: url(:/UploadHandoutDialog/Resources/upd_presentation_clicked.png);
+    background-color: transparent;
+	background-repeat: no-repeat;
+    background-position:center;
+}
+
+QLabel#pageLabel {
+	font-family:&quot;Microsoft YaHei&quot;; 
+	font-size: 14px;
+	color: #4A4A4A;
+}
+
+QProgressBar {
+	background: rgb(230,230,230);
+	text-align: top;
+	border-radius: 2px;
+}
+
+QProgressBar::chunk {
+	background: rgb(222,200,200);
+	border-radius: 2px;
+}
+
+QPushButton#progressBarLeftButton {
+	text-align:left;
+	background-color: transparent;
+	font-size: 14px;
+	font-family:&quot;Microsoft YaHei&quot;;
+	color: #FA5D5C;
+}
+
+QPushButton#progressBarLeftButton:hover {
+	text-align:left;
+	background-color: transparent;
+	font-size: 14px;
+	font-family:&quot;Microsoft YaHei&quot;;
+	color: rgb(255,2,0);
+}
+
+QPushButton#progressBarLeftButton:pressed {
+	text-align:left;
+	background-color: transparent;
+	font-size: 14px;
+	font-family:&quot;Microsoft YaHei&quot;;
+	color: rgb(201,32,32);
+}
+
+QPushButton#progressBarMiddleButton {
+	background-color: transparent;
+	font-family:&quot;Microsoft YaHei&quot;;
+	font-size: 12px;
+	color: rgb(74,149,241);
+}
+
+QPushButton#progressBarRightButton {
+	background-color: transparent;
+	font-family:&quot;Microsoft YaHei&quot;;
+	font-size: 12px;
+	color: rgb(168,168,168);
+}
+
+QPushButton#progressBarCancleButton {
+	background-color: transparent;
+	font-family:&quot;Microsoft YaHei&quot;;
+	font-size: 12px;
+	color: rgb(74,149,241);
+}
+
+QPushButton#progressBarCancleButton:hover {
+	background-color: transparent;
+	font-family:&quot;Microsoft YaHei&quot;;
+	color: #81BBFF;
+}
+
+QPushButton#progressBarCancleButton:pressed {
+	background-color: transparent;
+	font-family:&quot;Microsoft YaHei&quot;;
+	font-size: 12px;
+	color: rgb(78,132,195);
+}
+
+</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QWidget" name="tittleWidget" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>10</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>10</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="iconButton">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>21</width>
+          <height>21</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>21</width>
+          <height>21</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="tittleLabel">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>上传课件</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>661</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="minButton">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_5">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>10</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="closeButton">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <layout class="QGridLayout" name="gridLayout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item row="0" column="1">
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>108</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="1" column="0">
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="1" column="1">
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="listLabel">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>还未添加过课件</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QListWidget" name="listWidget">
+           <property name="minimumSize">
+            <size>
+             <width>370</width>
+             <height>295</height>
+            </size>
+           </property>
+           <property name="horizontalScrollBarPolicy">
+            <enum>Qt::ScrollBarAlwaysOff</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>367</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QWidget" name="widget_2" native="true">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>370</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>370</width>
+             <height>35</height>
+            </size>
+           </property>
+           <widget class="QProgressBar" name="progressBar">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>370</width>
+              <height>35</height>
+             </rect>
+            </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>370</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>370</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="value">
+             <number>50</number>
+            </property>
+            <property name="textVisible">
+             <bool>false</bool>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="progressBarLeftButton">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>5</y>
+              <width>141</width>
+              <height>23</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>上传课件</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="progressBarMiddleButton">
+            <property name="geometry">
+             <rect>
+              <x>160</x>
+              <y>7</y>
+              <width>54</width>
+              <height>23</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>45%</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="progressBarRightButton">
+            <property name="geometry">
+             <rect>
+              <x>238</x>
+              <y>7</y>
+              <width>131</width>
+              <height>23</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>课件可为PPT或PDF格式</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="progressBarCancleButton">
+            <property name="geometry">
+             <rect>
+              <x>318</x>
+              <y>8</y>
+              <width>48</width>
+              <height>23</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>取消</string>
+            </property>
+           </widget>
+           <zorder>progressBar</zorder>
+           <zorder>progressBarMiddleButton</zorder>
+           <zorder>progressBarRightButton</zorder>
+           <zorder>progressBarCancleButton</zorder>
+           <zorder>progressBarLeftButton</zorder>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QWidget" name="previewWidget" native="true">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>370</width>
+             <height>325</height>
+            </size>
+           </property>
+           <widget class="QPushButton" name="prevButton">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>140</y>
+              <width>45</width>
+              <height>45</height>
+             </rect>
+            </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>45</width>
+              <height>45</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>45</width>
+              <height>45</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="UploadHandoutDialog.qrc">
+              <normaloff>:/UploadHandoutDialog/Resources/upd_prev.png</normaloff>:/UploadHandoutDialog/Resources/upd_prev.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>45</width>
+              <height>45</height>
+             </size>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="nextButton">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="geometry">
+             <rect>
+              <x>316</x>
+              <y>140</y>
+              <width>45</width>
+              <height>45</height>
+             </rect>
+            </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>45</width>
+              <height>45</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>45</width>
+              <height>45</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="UploadHandoutDialog.qrc">
+              <normaloff>:/UploadHandoutDialog/Resources/upd_next.png</normaloff>:/UploadHandoutDialog/Resources/upd_next.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>45</width>
+              <height>45</height>
+             </size>
+            </property>
+           </widget>
+           <widget class="QLabel" name="previewLabel">
+            <property name="geometry">
+             <rect>
+              <x>1</x>
+              <y>30</y>
+              <width>368</width>
+              <height>255</height>
+             </rect>
+            </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>368</width>
+              <height>255</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>368</width>
+              <height>255</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="scaledContents">
+             <bool>false</bool>
+            </property>
+           </widget>
+           <zorder>previewLabel</zorder>
+           <zorder>nextButton</zorder>
+           <zorder>prevButton</zorder>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="pageLabel">
+             <property name="text">
+              <string>pages</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_6">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="presentationButton2">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>141</width>
+               <height>35</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>141</width>
+               <height>35</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="presentationButton1">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>141</width>
+               <height>35</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>141</width>
+               <height>35</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>110</width>
+               <height>35</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item row="1" column="2">
+      <spacer name="horizontalSpacer_4">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="2" column="1">
+      <spacer name="verticalSpacer_4">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Expanding</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="UploadHandoutDialog.qrc"/>
+ </resources>
+ <connections/>
+</ui>

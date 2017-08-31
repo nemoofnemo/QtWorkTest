@@ -1,0 +1,14 @@
+<RCC>
+  <qresource prefix="/QtWorkTest">
+    <file>Resources/commentDialogIcon.png</file>
+    <file>Resources/close_hover.png</file>
+    <file>Resources/commentDialogShadow.png</file>
+    <file>Resources/close_normal.png</file>
+    <file>Resources/mini_hover.png</file>
+    <file>Resources/mini_normal.png</file>
+    <file>Resources/expression.png</file>
+    <file>Resources/mainframe_logoimg.png</file>
+    <file>Resources/send.png</file>
+    <file>Resources/mask.png</file>
+  </qresource>
+</RCC>

@@ -1,0 +1,17 @@
+<RCC>
+  <qresource prefix="UploadHandoutDialog">
+    <file>Resources/upd_pdf.png</file>
+    <file>Resources/upd_ppt.png</file>
+    <file>Resources/upd_presentation_clicked.png</file>
+    <file>Resources/upd_presentation_disable.png</file>
+    <file>Resources/upd_presentation_hover.png</file>
+    <file>Resources/upd_presentation_normal.png</file>
+    <file>Resources/upd_next.png</file>
+    <file>Resources/upd_prev.png</file>
+    <file>Resources/upd_close_hover.png</file>
+    <file>Resources/upd_close_normal.png</file>
+    <file>Resources/upd_icon.png</file>
+    <file>Resources/upd_min_normal.png</file>
+    <file>Resources/upd_mini_hover.png</file>
+  </qresource>
+</RCC>
