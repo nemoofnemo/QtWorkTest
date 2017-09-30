@@ -4,3 +4,11 @@ Release/*
 *.sdf
 *.sln
 *.suo
+*.exe
+*.log
+*.idb
+*.pdb
+*.obj
+*.ilk
+*.user
+*.tlog

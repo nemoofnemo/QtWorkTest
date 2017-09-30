@@ -2,6 +2,8 @@
 
 HandoutItem::HandoutItem(QWidget * parent) : QWidget(parent){
 	ui.setupUi(this);
+	context = nullptr;
+	item = nullptr;
 	connect(ui.removeButton, &QPushButton::clicked, this, &HandoutItem::onRemoveButtonClicked);
 }
 

@@ -3,6 +3,7 @@
 #include <QtWidgets/QWidget>
 #include <QDialog>
 #include <QMouseEvent>
+#include <QFileDialog>
 #include "ui_UploadHandoutDialog.h"
 #include "HandoutItem.h"
 
@@ -35,6 +36,7 @@ public slots:
 	void showImage(const QString & path);
 	void onPresentationButtonClicked();
 	void onProgressBarLeftButtonClicked();
+	void setProgressBarValue(int num);
 
 	void mouseMoveEvent(QMouseEvent *event);
 	void mousePressEvent(QMouseEvent *event);

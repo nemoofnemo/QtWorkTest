@@ -9,14 +9,16 @@ UploadHandoutDialog::UploadHandoutDialog(QWidget *parent)
 	pptIcon.load(":/UploadHandoutDialog/Resources/upd_ppt.png");
 	pdfIcon.load(":/UploadHandoutDialog/Resources/upd_pdf.png");
 	ui.presentationButton2->hide();
-	//ui.progressBarCancleButton->hide();
+	ui.progressBarCancleButton->hide();
 	connect(this, &UploadHandoutDialog::deleteItemEvent, this, &UploadHandoutDialog::deleteItem);
 	connect(ui.listWidget, &QListWidget::itemClicked, this, &UploadHandoutDialog::onItemClicked);
 	connect(ui.closeButton, &QPushButton::clicked, this, &UploadHandoutDialog::close);
 	connect(ui.minButton, &QPushButton::clicked, this, &UploadHandoutDialog::showMinimized);
 	connect(ui.presentationButton2, &QPushButton::clicked, this, &UploadHandoutDialog::onPresentationButtonClicked);
+	connect(ui.progressBarLeftButton, &QPushButton::clicked, this, &UploadHandoutDialog::onProgressBarLeftButtonClicked);
 
 	//debug code
+	setProgressBarValue(32);
 	addItem(PPT, "asdf");
 	for (int i = 0; i < 5; ++i){
 		addItem(PDF, "ffasdf");
@@ -70,6 +72,12 @@ void UploadHandoutDialog::clearListWidget(){
 			delete temp;
 		}
 	}
+}
+
+void UploadHandoutDialog::setProgressBarValue(int num){
+	QString str = QString::number(num, 10) + "%";
+	ui.progressBarMiddleButton->setText(str);
+	ui.progressBar->setValue(num);
 }
 
 void UploadHandoutDialog::resetSelectedItem(){
@@ -129,7 +137,7 @@ void UploadHandoutDialog::onPresentationButtonClicked(){
 	if (curItem){
 		auto item = (HandoutItem*)ui.listWidget->itemWidget(curItem);
 		QString path = item->ui.filenameLabel->text();
-		qDebug("UploadHandoutDialog::onPresentationButtonClicked, path:%s.", path.toUtf8().data());
+		qDebug("UploadHandoutDialog::onPresentationButtonClicked, path:%s", path.toUtf8().data());
 		//emit signal
 		//close();
 	}
@@ -137,5 +145,17 @@ void UploadHandoutDialog::onPresentationButtonClicked(){
 }
 
 void UploadHandoutDialog::onProgressBarLeftButtonClicked(){
+	QString fileName = QFileDialog::getOpenFileName(this, 
+		QString::fromLocal8Bit("选择文件"),
+		".",
+		QString::fromLocal8Bit("课件 (*.ppt *.pdf)"));
 
+	qDebug("UploadHandoutDialog::onProgressBarLeftButtonClicked, path:%s", fileName.toUtf8().data());
+	if (fileName.length()){
+		ui.progressBarCancleButton->show();
+		ui.progressBarRightButton->hide();
+		ui.progressBarLeftButton->setText(QString::fromLocal8Bit("上传中..."));
+		ui.progressBarLeftButton->setDisabled(true);
+	}
+	
 }

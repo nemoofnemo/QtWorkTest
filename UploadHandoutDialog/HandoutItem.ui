@@ -53,6 +53,9 @@ QPushButton#removeButton:pressed {
 </string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>10</number>
+   </property>
    <item row="0" column="0">
     <widget class="QPushButton" name="iconButton">
      <property name="sizePolicy">

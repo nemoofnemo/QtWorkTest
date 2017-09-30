@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ToolBarClass</class>
+ <widget class="QWidget" name="ToolBarClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>356</width>
+    <height>42</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>42</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>42</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>ToolBar</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#ToolBarClass {
+	background-color:white;
+	border-style: solid solid solid none;
+	border-width: 1px;
+	border-color: rgb(205,200,200);
+}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QCheckBox" name="laserPen">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>42</width>
+       <height>42</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>42</width>
+       <height>42</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QCheckBox#laserPen {
+    
+}
+
+QCheckBox#laserPen::indicator {
+    
+}
+ 
+QCheckBox#laserPen::indicator:unchecked {
+    image: url(:/ToolBar/Resources/tb_laser_pen.png);
+	background-color: transparent;
+}
+ 
+QCheckBox#laserPen::indicator:unchecked:disabled {
+    image: url(:/ToolBar/Resources/tb_laser_pen.png);
+	background-color: transparent;
+}
+ 
+QCheckBox#laserPen::indicator:unchecked:hover {
+    image: url(:/ToolBar/Resources/tb_laser_pen.png);
+	background-color: rgb(245,240,240);
+	border-style:solid;
+	border-width:1px;
+	border-color: rgb(192,187,187);
+}
+ 
+QCheckBox#laserPen::indicator:checked {
+    image: url(:/ToolBar/Resources/tb_laser_pen_selected.png);
+	background-color: rgb(205,200,200);
+	border-style:solid;
+	border-width:1px;
+	border-color: rgb(192,187,187);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QCheckBox" name="moveCheckBox">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>42</width>
+       <height>42</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>42</width>
+       <height>42</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QCheckBox#moveCheckBox {
+    
+}
+
+QCheckBox#moveCheckBox::indicator {
+    
+}
+ 
+QCheckBox#moveCheckBox::indicator:unchecked {
+    image: url(:/ToolBar/Resources/tb_move.png);
+}
+ 
+QCheckBox#moveCheckBox::indicator:unchecked:disabled {
+    image:url(:/ToolBar/Resources/tb_move.png);
+}
+ 
+QCheckBox#moveCheckBox::indicator:unchecked:hover {
+    image: url(:/ToolBar/Resources/tb_move.png);
+	background-color: rgb(245,240,240);
+	border-style:solid;
+	border-width:1px;
+	border-color: rgb(192,187,187);
+}
+ 
+QCheckBox#moveCheckBox::indicator:checked {
+    image: url(:/ToolBar/Resources/tb_move_selected.png);
+	background-color: rgb(205,200,200);
+	border-style:solid;
+	border-width:1px;
+	border-color: rgb(192,187,187);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <widget class="QCheckBox" name="penCheckBox">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>42</width>
+       <height>42</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>42</width>
+       <height>42</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QCheckBox#penCheckBox {
+    
+}
+
+QCheckBox#penCheckBox::indicator {
+    
+}
+ 
+QCheckBox#penCheckBox::indicator:unchecked {
+    image: url(:/ToolBar/Resources/tb_pen.png);
+	background-color: transparent;
+}
+ 
+QCheckBox#penCheckBox::indicator:unchecked:disabled {
+    image: url(:/ToolBar/Resources/tb_pen.png);
+	background-color: transparent;
+}
+ 
+QCheckBox#penCheckBox::indicator:unchecked:hover {
+    image: url(:/ToolBar/Resources/tb_pen.png);
+	background-color: rgb(245,240,240);
+	border-style:solid;
+	border-width:1px;
+	border-color: rgb(192,187,187);
+}
+ 
+QCheckBox#penCheckBox::indicator:checked {
+    image: url(:/ToolBar/Resources/tb_pen_selected.png);
+	background-color: rgb(205,200,200);
+	border-style:solid;
+	border-width:1px;
+	border-color: rgb(192,187,187);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="3">
+    <widget class="QCheckBox" name="textCheckBox">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>42</width>
+       <height>42</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>42</width>
+       <height>42</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QCheckBox#textCheckBox {
+    
+}
+
+QCheckBox#textCheckBox::indicator {
+    
+}
+ 
+QCheckBox#textCheckBox::indicator:unchecked {
+    image: url(:/ToolBar/Resources/tb_text.png);
+	background-color: transparent;
+}
+ 
+QCheckBox#textCheckBox::indicator:unchecked:disabled {
+    image: url(:/ToolBar/Resources/tb_text.png);
+	background-color: transparent;
+}
+ 
+QCheckBox#textCheckBox::indicator:unchecked:hover {
+    image: url(:/ToolBar/Resources/tb_text.png);
+	background-color: rgb(245,240,240);
+	border-style:solid;
+	border-width:1px;
+	border-color: rgb(192,187,187);
+}
+ 
+QCheckBox#textCheckBox::indicator:checked {
+    image: url(:/ToolBar/Resources/tb_text_selected.png);
+	background-color: rgb(205,200,200);
+	border-style:solid;
+	border-width:1px;
+	border-color: rgb(192,187,187);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="4">
+    <widget class="QCheckBox" name="arrowCheckBox">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>42</width>
+       <height>42</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>42</width>
+       <height>42</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QCheckBox#arrowCheckBox {
+    
+}
+
+QCheckBox#arrowCheckBox::indicator {
+    
+}
+ 
+QCheckBox#arrowCheckBox::indicator:unchecked {
+    image: url(:/ToolBar/Resources/tb_arrow.png);
+	background-color: transparent;
+}
+ 
+QCheckBox#arrowCheckBox::indicator:unchecked:disabled {
+    image: url(:/ToolBar/Resources/tb_arrow.png);
+	background-color: transparent;
+}
+ 
+QCheckBox#arrowCheckBox::indicator:unchecked:hover {
+    image: url(:/ToolBar/Resources/tb_arrow.png);
+	background-color: rgb(245,240,240);
+	border-style:solid;
+	border-width:1px;
+	border-color: rgb(192,187,187);
+}
+ 
+QCheckBox#arrowCheckBox::indicator:checked {
+    image: url(:/ToolBar/Resources/tb_arrow_selected.png);
+	background-color: rgb(205,200,200);
+	border-style:solid;
+	border-width:1px;
+	border-color: rgb(192,187,187);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="5">
+    <widget class="QCheckBox" name="rectCheckBox">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>42</width>
+       <height>42</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>42</width>
+       <height>42</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QCheckBox#rectCheckBox {
+    
+}
+
+QCheckBox#rectCheckBox::indicator {
+    
+}
+ 
+QCheckBox#rectCheckBox::indicator:unchecked {
+    image: url(:/ToolBar/Resources/tb_rect.png);
+	background-color: transparent;
+}
+ 
+QCheckBox#rectCheckBox::indicator:unchecked:disabled {
+    image: url(:/ToolBar/Resources/tb_rect.png);
+	background-color: transparent;
+}
+ 
+QCheckBox#rectCheckBox::indicator:unchecked:hover {
+    image: url(:/ToolBar/Resources/tb_rect.png);
+	background-color: rgb(245,240,240);
+	border-style:solid;
+	border-width:1px;
+	border-color: rgb(192,187,187);
+}
+ 
+QCheckBox#rectCheckBox::indicator:checked {
+    image: url(:/ToolBar/Resources/tb_rect_selected.png);
+	background-color: rgb(205,200,200);
+	border-style:solid;
+	border-width:1px;
+	border-color: rgb(192,187,187);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="6">
+    <widget class="QCheckBox" name="eraseCheckBox">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>42</width>
+       <height>42</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>42</width>
+       <height>42</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QCheckBox#eraseCheckBox {
+    
+}
+
+QCheckBox#eraseCheckBox::indicator {
+    
+}
+ 
+QCheckBox#eraseCheckBox::indicator:unchecked {
+    image: url(:/ToolBar/Resources/tb_erase.png);
+	background-color: transparent;
+}
+ 
+QCheckBox#eraseCheckBox::indicator:unchecked:disabled {
+    image: url(:/ToolBar/Resources/tb_erase.png);
+	background-color: transparent;
+}
+ 
+QCheckBox#eraseCheckBox::indicator:unchecked:hover {
+    image: url(:/ToolBar/Resources/tb_erase.png);
+	background-color: rgb(245,240,240);
+	border-style:solid;
+	border-width:1px;
+	border-color: rgb(192,187,187);
+}
+ 
+QCheckBox#eraseCheckBox::indicator:checked {
+    image: url(:/ToolBar/Resources/tb_erase_selected.png);
+	background-color: rgb(205,200,200);
+	border-style:solid;
+	border-width:1px;
+	border-color: rgb(192,187,187);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="7">
+    <widget class="QCheckBox" name="clearCheckBox">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>42</width>
+       <height>42</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>42</width>
+       <height>42</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QCheckBox#clearCheckBox {
+    
+}
+
+QCheckBox#clearCheckBox::indicator {
+    
+}
+ 
+QCheckBox#clearCheckBox::indicator:unchecked {
+    image: url(:/ToolBar/Resources/tb_clear.png);
+	background-color: transparent;
+}
+ 
+QCheckBox#clearCheckBox::indicator:unchecked:disabled {
+    image: url(:/ToolBar/Resources/tb_clear.png);
+	background-color: transparent;
+}
+ 
+QCheckBox#clearCheckBox::indicator:unchecked:hover {
+    image: url(:/ToolBar/Resources/tb_clear.png);
+	background-color: rgb(245,240,240);
+	border-style:solid;
+	border-width:1px;
+	border-color: rgb(192,187,187);
+}
+ 
+QCheckBox#clearCheckBox::indicator:checked {
+    image: url(:/ToolBar/Resources/tb_clear_selected.png);
+	background-color: rgb(205,200,200);
+	border-style:solid;
+	border-width:1px;
+	border-color: rgb(192,187,187);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="8">
+    <widget class="QToolButton" name="retractButton">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QToolButton#retractButton {
+    background-repeat: no-repeat;
+    background-color: rgb(245,240,240);
+	border-style: none;
+	margin-right:1px;
+}
+
+QToolButton#retractButton:hover {
+    background-repeat: no-repeat;
+    background-color: rgb(234,224,224);
+	border-style: none;
+	margin-right:1px;
+}
+
+QToolButton#retractButton:pressed {
+    background-repeat: no-repeat;
+    background-color: rgb(205,200,200);
+	border-style: none;
+	margin-right:1px;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>:/ToolBar/Resources/tb_retract.png</normaloff>:/ToolBar/Resources/tb_retract.png</iconset>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="ToolBar.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,21 @@
+<RCC>
+  <qresource prefix="ToolBar">
+    <file>Resources/tb_arrow.png</file>
+    <file>Resources/tb_arrow_selected.png</file>
+    <file>Resources/tb_clear.png</file>
+    <file>Resources/tb_clear_selected.png</file>
+    <file>Resources/tb_erase.png</file>
+    <file>Resources/tb_erase_selected.png</file>
+    <file>Resources/tb_laser_pen.png</file>
+    <file>Resources/tb_laser_pen_selected.png</file>
+    <file>Resources/tb_move.png</file>
+    <file>Resources/tb_move_selected.png</file>
+    <file>Resources/tb_pen.png</file>
+    <file>Resources/tb_pen_selected.png</file>
+    <file>Resources/tb_rect.png</file>
+    <file>Resources/tb_rect_selected.png</file>
+    <file>Resources/tb_retract.png</file>
+    <file>Resources/tb_text.png</file>
+    <file>Resources/tb_text_selected.png</file>
+  </qresource>
+</RCC>

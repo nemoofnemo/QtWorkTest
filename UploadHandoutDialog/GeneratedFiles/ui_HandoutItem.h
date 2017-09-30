@@ -75,6 +75,7 @@ public:
 ""));
         gridLayout = new QGridLayout(HandoutItem);
         gridLayout->setObjectName(QStringLiteral("gridLayout"));
+        gridLayout->setContentsMargins(10, -1, -1, -1);
         iconButton = new QPushButton(HandoutItem);
         iconButton->setObjectName(QStringLiteral("iconButton"));
         QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);

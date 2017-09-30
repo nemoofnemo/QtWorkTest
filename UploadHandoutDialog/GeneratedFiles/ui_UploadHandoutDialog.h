@@ -150,13 +150,20 @@ public:
 "}\n"
 "QListView#l"
                         "istWidget::item:selected:!active {\n"
-"	border-width: 0px ;\n"
+"	border-style: solid none solid none;\n"
+"	border-width: 1px;\n"
+"	border-color: #EAEAEA;\n"
 "}\n"
 "QListView#listWidget::item:selected:active {\n"
-"	border-width: 0px ;\n"
+"	border-style: solid none solid none;\n"
+"	border-width: 1px;\n"
+"	border-color: #EAEAEA;\n"
+"	background-color: #e6d6d6;\n"
 "}\n"
 "QListView#listWidget::item:hover{\n"
-"	border-width: 0px ;\n"
+"	border-style: solid none solid none;\n"
+"	border-width: 1px;\n"
+"	border-color: #EAEAEA;\n"
 "	background: #f4ecec;\n"
 "}\n"
 "\n"
@@ -187,7 +194,8 @@ public:
 "}\n"
 "\n"
 "QPushButton#prevButton{\n"
-"	background-color: transparent;\n"
+""
+                        "	background-color: transparent;\n"
 "}\n"
 "\n"
 "QPushButton#nextButton{\n"
@@ -195,8 +203,7 @@ public:
 "}\n"
 "\n"
 "QPushButton#presentationButton1{\n"
-"	background-image: url(:/UploadHandoutDialog/Resources/upd_presentation_disable"
-                        ".png);\n"
+"	background-image: url(:/UploadHandoutDialog/Resources/upd_presentation_disable.png);\n"
 "    background-color: transparent;\n"
 "	background-repeat: no-repeat;\n"
 "    background-position:center;\n"
@@ -218,7 +225,8 @@ public:
 "\n"
 "QPushButton#presentationButton2:pressed{\n"
 "	background-image: url(:/UploadHandoutDialog/Resources/upd_presentation_clicked.png);\n"
-"    background-color: transparent;\n"
+"    background-color:"
+                        " transparent;\n"
 "	background-repeat: no-repeat;\n"
 "    background-position:center;\n"
 "}\n"
@@ -230,8 +238,7 @@ public:
 "}\n"
 "\n"
 "QProgressBar {\n"
-"	ba"
-                        "ckground: rgb(230,230,230);\n"
+"	background: rgb(230,230,230);\n"
 "	text-align: top;\n"
 "	border-radius: 2px;\n"
 "}\n"
@@ -265,7 +272,8 @@ public:
 "	color: rgb(201,32,32);\n"
 "}\n"
 "\n"
-"QPushButton#progressBarMiddleButton {\n"
+"QPus"
+                        "hButton#progressBarMiddleButton {\n"
 "	background-color: transparent;\n"
 "	font-family:\"Microsoft YaHei\";\n"
 "	font-size: 12px;\n"
@@ -273,8 +281,7 @@ public:
 "}\n"
 "\n"
 "QPushButton#progressBarRightButton {\n"
-"	background-color: tran"
-                        "sparent;\n"
+"	background-color: transparent;\n"
 "	font-family:\"Microsoft YaHei\";\n"
 "	font-size: 12px;\n"
 "	color: rgb(168,168,168);\n"
@@ -420,13 +427,13 @@ public:
         progressBarLeftButton = new QPushButton(widget_2);
         progressBarLeftButton->setObjectName(QStringLiteral("progressBarLeftButton"));
         progressBarLeftButton->setEnabled(true);
-        progressBarLeftButton->setGeometry(QRect(10, 5, 141, 23));
+        progressBarLeftButton->setGeometry(QRect(10, 5, 71, 23));
         progressBarMiddleButton = new QPushButton(widget_2);
         progressBarMiddleButton->setObjectName(QStringLiteral("progressBarMiddleButton"));
         progressBarMiddleButton->setGeometry(QRect(160, 7, 54, 23));
         progressBarRightButton = new QPushButton(widget_2);
         progressBarRightButton->setObjectName(QStringLiteral("progressBarRightButton"));
-        progressBarRightButton->setGeometry(QRect(238, 7, 131, 23));
+        progressBarRightButton->setGeometry(QRect(224, 7, 131, 23));
         progressBarCancleButton = new QPushButton(widget_2);
         progressBarCancleButton->setObjectName(QStringLiteral("progressBarCancleButton"));
         progressBarCancleButton->setGeometry(QRect(318, 8, 48, 23));

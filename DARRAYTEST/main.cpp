@@ -544,9 +544,7 @@ int main(void){
 	da_push_back(arr, &v);
 	v = 3;
 	da_push_back(arr, &v);
-	auto x = da_get(arr, 1, int);
-	v = 2;
-	da_erase_item(arr, &v);
+	da_erase(arr, 1);
 	da_free(arr);
 	return 0;
 }
